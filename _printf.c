@@ -38,6 +38,24 @@ static int (*check_for_specifiers(const char *format))(va_list)
 }
 
 /**
+ * isToIgnoreChar - checks if char must be ignored after %
+ * @c: char to check
+ *
+ * Return: 1 (SUCCESS), 0 (Faield)
+ */
+int isToIgnoreChar(char c)
+{
+	if (c == '+' || c == ' ' || c == '#')
+	{
+		return (1);
+	}
+	else
+	{
+		return(0);
+	}
+}
+
+/**
  * _printf - prints anything
  * @format: list of argument types passed to the function
  *
@@ -61,7 +79,14 @@ int _printf(const char *format, ...)
 		}
 		if (!format[i])
 			return (count);
-		f = check_for_specifiers(&format[i + 1]);
+		if (isToIgnoreChar(format[i + 1]) == 1)
+		{
+			f = check_for_specifiers(&format[i + 2]);
+		}
+		else
+		{
+			f = check_for_specifiers(&format[i + 1]);
+		}
 		if (f != NULL)
 		{
 			count += f(valist);
@@ -70,6 +95,7 @@ int _printf(const char *format, ...)
 		}
 		if (!format[i + 1])
 			return (-1);
+
 		_putchar(format[i]);
 		count++;
 		if (format[i + 1] == '%')
