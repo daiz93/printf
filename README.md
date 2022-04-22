@@ -6,7 +6,7 @@
 
 ## Examples
 **String**
-* Input: ```_printf("%s\n", 'TALX Software Engineering programme.');```
+* Input: ```_printf("%s\n", 'ALX Software Engineering programme.');```
 * Output: ```ALX Software Engineering programme.```
 
 **Character**
