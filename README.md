@@ -1,13 +1,13 @@
 **_Printf : a function like standar printf function**
 # _printf
-```_printf``` is a custom implementation of the C programming function ```printf```. This project is an application of the C programming knowledge that [Holberton School](https://www.holbertonschool.com/) cohort 3 students have learned since starting the program on May 1, 2017.
+```_printf``` is a custom implementation of the C programming function ```printf```. This project is an application of the C programming knowledge that [Holberton School](https://www.holbertonschool.com/)  througth [ALX Software Engineering programme](https://www.alxafrica.com/) Cohort Abj-0022 students have learned since starting the program on February, 2022.
 
 **Prototype:** ```int _printf(const char *, ...);```
 
 ## Examples
 **String**
-* Input: ```_printf("%s\n", 'This is a string.');```
-* Output: ```This is a string.```
+* Input: ```_printf("%s\n", 'TALX Software Engineering programme.');```
+* Output: ```ALX Software Engineering programme.```
 
 **Character**
 * Input: ```_printf("The first letter in the alphabet is %c\n", 'A');```
@@ -21,7 +21,7 @@
 * Input: ```_printf("%d\n", 1000);```
 * Output:  ```1000```
 ## Project Requirements
-* All files will be compiled on Ubuntu 14.04 LTS
+* All files will be compiled on Ubuntu 20.04 LTS
 * Programs and functions will be compiled with gcc 4.8.4 using flags -Wall -Werror -Wextra and -pedantic
 * Code must follow the [Betty](https://github.com/holbertonschool/Betty/wiki) style
 * Global variables are not allowed
@@ -62,6 +62,6 @@
 * **print_unsigned_int.c:** - contains the functions ```print_u```, ```print_o```, and ```print_b```, which handle the conversion specifiers ```u```, ```o```, and ```b```, respectively
 * **print_rot13.c** - contains the function ```print_R```, which handles the conversion specifier ```R```
 ## Authors
-[OUATTARA Alphonse](https://github.com/Robotoalpha) |
+[OUATTARA Alphonse](https://github.com/Robotoalpha) & [KPOHIZOUN Desmond](https://github.com/daiz93)
 
 
