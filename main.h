@@ -31,4 +31,4 @@ int print_r(va_list r);
 int print_R(va_list R);
 int isToIgnoreChar(char c),
 
-#endif
+#endif /*MAIN_H*/

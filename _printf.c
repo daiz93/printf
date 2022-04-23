@@ -82,6 +82,7 @@ int _printf(const char *format, ...)
 		if (isToIgnoreChar(format[i + 1]) == 1)
 		{
 			f = check_for_specifiers(&format[i + 2]);
+			
 		}
 		else
 		{
@@ -98,7 +99,7 @@ int _printf(const char *format, ...)
 
 		_putchar(format[i]);
 		count++;
-		if (format[i + 1] == '%')
+		if (format[i + 1] == '%' || isToIgnoreChar(format[i + 1]) == 1)
 			i += 2;
 		else
 			i++;
